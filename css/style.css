@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background: rgb(0,150,136);
+    background: linear-gradient(to bottom, rgb(0, 150, 136) 20%, rgb(219, 219, 210)20%);
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+.fas{
+    color: #b1b1b1;
+    padding: 0 5px;
+    font-size: 17px;
+}
+.finestra{
+    height: 95%;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    vertical-align: middle;
+}
+.leftSection{
+    display: flex;
+    width: 35%;
+
+}
+.row{
+    height: 65px;
+    width: 100%;
+    
+}
+.utente{
+    background-color: rgb(234, 234, 234);
+    
+}
+.avatar{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+}
+.infoUtente{
+    padding: 9px;
+    display: flex;
+    align-items: center;
+}
+.iconsUtente{
+    justify-content:flex-end;
+    display: flex;
+}
