@@ -77,3 +77,21 @@
     color: grey;
     font-size: 12px;
 }
+.search{
+    background-color: #f9f9f9;
+    height: 40px;
+    padding: 7px;
+}
+.contactSearch{
+    width: 100%;
+    border: none;
+    color: #b1b1b1;
+    padding: 0 30px;
+    
+}
+.search.placeholder{
+    color: #b1b1b1;
+}
+.sezioneContatti{
+    overflow-y: scroll;
+}
