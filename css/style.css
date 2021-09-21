@@ -27,22 +27,23 @@
 .leftSection{
     display: flex;
     width: 35%;
-
+    flex-wrap: wrap;
 }
 .row{
     height: 65px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
     
 }
 .utente{
     background-color: rgb(234, 234, 234);
-    
 }
 .avatar{
     border-radius: 50%;
     height: 50px;
     width: 50px;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 .infoUtente{
     padding: 9px;
@@ -50,6 +51,29 @@
     align-items: center;
 }
 .iconsUtente{
-    justify-content:flex-end;
+    align-items: center;
     display: flex;
+    padding-right:10px ;
+}
+.notifiche{
+    background-color: #8edafc;
+    align-items: center;
+    padding: 9px;
+    justify-content: flex-start;
+}
+.bell{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.fa-bell-slash{
+    color: #8edafc;
+    align-items: center;
+}
+.sottotitolo{
+    text-decoration: underline;
+    color: grey;
+    font-size: 12px;
 }
