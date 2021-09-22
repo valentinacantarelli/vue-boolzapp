@@ -25,20 +25,19 @@
     vertical-align: middle;
     display: flex;
     align-items: flex-start;
-    
 }
+/*left section*/
 .leftSection{
     display: flex;
     width: 35%;
     flex-wrap: wrap;
-    
+    height: 100%;
 }
 .row{
     height: 65px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
 }
 .utente{
     background-color: rgb(234, 234, 234);
@@ -91,29 +90,26 @@
     border: none;
     color: #b1b1b1;
     padding: 0 30px;
-    
 }
 .search.placeholder{
     color: #b1b1b1;
 }
+/*contatti*/
 .sezioneContatti{
     overflow-y:scroll;
     width: 100%;
     height: calc(100% - 170px);
-    display: flex;
     flex-wrap: wrap;
-    
-    
-    
+    align-items: flex-start;
 }
 .contatti{
     border-bottom: 1px solid #ece2e2;
     align-items: center;
     padding: 0 10px;
     justify-content: flex-start;
-    
 }
-//sezione destra chat
+
+/*sezione destra chat*/
 .chatSection{
     display: flex;
     width: 65%;
