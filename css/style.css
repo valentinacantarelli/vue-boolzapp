@@ -12,7 +12,7 @@
     font-family: 'Lato', sans-serif;
     font-size: 14px;
 }
-.fas{
+.fas, .far{
     color: #b1b1b1;
     padding: 0 5px;
     font-size: 17px;
@@ -129,14 +129,31 @@
 .iconChat{
     justify-self: flex-end;
 }
-
 .utenteChat{
     display: flex;
     align-items: center;
-
 }
 .chat{
      background-image: url(../img/mine.jpg);
-     height: 80%;
+     height: calc(100% - 130px);
+     width: 100%;
     
+}
+.scriviMessaggio{
+    background-color: #f3eeea;
+    height: 65px;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.messageInput{
+    height: 45px;
+    width: 83%;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
 }
