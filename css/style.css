@@ -113,12 +113,13 @@
 .chatSection{
     display: flex;
     width: 65%;
-    
+    height: 100%;
+    flex-wrap: wrap;
 }
 .conversazione{
     border-left:1px solid #ece2e2;
     display: flex;
-    align-content: space-between;
+    
     
 }
 .sottotitoloLiscio{
@@ -129,8 +130,13 @@
     justify-self: flex-end;
 }
 
+.utenteChat{
+    display: flex;
+    align-items: center;
+
+}
 .chat{
-    background-image: url(../img/mine.jpg);
-    width: 65%;
+     background-image: url(../img/mine.jpg);
+     height: 80%;
     
 }
