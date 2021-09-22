@@ -45,12 +45,26 @@
                         <input type="text" class="contactSearch"  placeholder="&#xF002; " style="font-family:Arial, FontAwesome" />
                     </div>
                     <!-- contatti -->
-                    <div class="sezioneContatti">
-                        <!-- <div class="row contatti"> -->
-                            <li v-for="contact in contacts" class="row contatti"> <img class="avatar" :src="'img/avatar'+ contact.avatar+'.jpg'" alt="">{{contact.name}}</li>
-                        <!-- </div> -->
+                    <ul class="sezioneContatti">
+                        <li v-for="contact in contacts" class="row contatti"> <img class="avatar" :src="'img/avatar'+ contact.avatar+'.jpg'" alt="">{{contact.name}}</li>
+                    </ul>
+                </section>
+                <!-- sezione destra chat -->
+                <section class="chatSection">
+                    <div class="row conversazione utente infoUtente">
+                        <img class="avatar "  src="img/avatar_1.jpg" alt="">
+                        <div class="statoUtente">
+                            <p>Michele</p>
+                            <p class="sottotitoloLiscio">Ultimo accesso oggi alle </p>
+                        </div>
+                        <div class="iconsUtente iconChat">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-paperclip"></i>
+                            <i class="fas fa-ellipsis-v"></i> 
+                        </div>
 
                     </div>
+                    <div class="chat"> </div>
 
                 </section>
             </div>

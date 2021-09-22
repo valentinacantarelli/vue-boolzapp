@@ -23,11 +23,15 @@
     margin: auto;
     background-color: white;
     vertical-align: middle;
+    display: flex;
+    align-items: flex-start;
+    
 }
 .leftSection{
     display: flex;
     width: 35%;
     flex-wrap: wrap;
+    
 }
 .row{
     height: 65px;
@@ -95,10 +99,11 @@
 .sezioneContatti{
     overflow-y:scroll;
     width: 100%;
-    height: 100%;
-    flex-grow: 1;
+    height: calc(100% - 170px);
     display: flex;
     flex-wrap: wrap;
+    
+    
     
 }
 .contatti{
@@ -106,4 +111,30 @@
     align-items: center;
     padding: 0 10px;
     justify-content: flex-start;
+    
+}
+//sezione destra chat
+.chatSection{
+    display: flex;
+    width: 65%;
+    
+}
+.conversazione{
+    border-left:1px solid #ece2e2;
+    display: flex;
+    align-content: space-between;
+    
+}
+.sottotitoloLiscio{
+    color: grey;
+    font-size: 12px;
+}
+.iconChat{
+    justify-self: flex-end;
+}
+
+.chat{
+    background-image: url(../img/mine.jpg);
+    width: 65%;
+    
 }
