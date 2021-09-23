@@ -55,7 +55,7 @@
                 <section class="chatSection">
                     <div class="row conversazione utente infoUtente">
                         <div class="utenteChat">
-                            <img class="avatar "  :src="`img/avatar${contacts[contattoSelezionato].avatar}.jpg`" alt="{{contacts[contattoSelezionato].name}}">
+                            <img class="avatar "  :src="`img/avatar${contacts[contattoSelezionato].avatar}.jpg`" alt="contacts[contattoSelezionato].name">
                             <div class="statoUtente">
                                 <p>{{contacts[contattoSelezionato].name}}</p>
                                 <p class="sottotitoloLiscio">Ultimo accesso oggi alle </p>
@@ -88,7 +88,7 @@
                     </div>
                     <div class="scriviMessaggio">
                         <i class="far fa-smile"></i>
-                        <input class="messageInput" type="text" placeholder="Scrivi un messaggio">
+                        <input class="messageInput" type="text" placeholder="Scrivi un messaggio" v-model="scriviMessaggio" @keyup.enter="addMsg()">
                         <i class="fas fa-microphone"></i>
                     </div>
                 </section>

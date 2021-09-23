@@ -91,13 +91,22 @@ const app=new Vue(
                 },
             ],
             contattoSelezionato:0,
+            scriviMessaggio:"",
 
         },
         methods:{
             selezionato:function(indice){
-               
                 return  this.contattoSelezionato=indice;
-            }
+            },
+            addMsg:function(){
+                if(this.scriviMessaggio != ""){
+                    this.contacts[this.contattoSelezionato].messages.push({
+                        date: '23/09/2021 15:28:00',
+                        message: this.scriviMessaggio,
+                        status: 'sent'
+                    });
+                }
+            },
         }
     }
 );
