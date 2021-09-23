@@ -55,9 +55,9 @@
                 <section class="chatSection">
                     <div class="row conversazione utente infoUtente">
                         <div class="utenteChat">
-                            <img class="avatar "  src="img/avatar_1.jpg" alt="">
+                            <img class="avatar "  :src="`img/avatar${contacts[contattoSelezionato].avatar}.jpg`" alt="{{contacts[contattoSelezionato].name}}">
                             <div class="statoUtente">
-                                <p>Michele</p>
+                                <p>{{contacts[contattoSelezionato].name}}</p>
                                 <p class="sottotitoloLiscio">Ultimo accesso oggi alle </p>
                             </div>
                         </div>
@@ -70,18 +70,18 @@
 
                     </div>
                     <div class="chat">
-                        <div class="rigaMsg inviato" v-for="(message,indice)in contacts[contattoSelezionato].messages":class="message.status" :key="indice">
+                        <div class="rigaMsg inviato" v-for="(message,indice) in contacts[contattoSelezionato].messages":class="message.status" :key="indice">
                             <div class="messaggi msgSend">
                                 <p class="testoMsg ">{{message.message}}</p>
-                                <p class="sottotitoloLiscio">{{message.date}}</p>
+                                <p class="sottotitoloLiscio dataMsg">{{message.date}}</p>
                             </div>
                         </div> 
-                        <div  class="rigaMsg ricevuto">
+                        <!-- <div  class="rigaMsg ricevuto">
                             <div class="messaggi msgReceived">
                                 <p class="testoMsg "></p>
                                 <p class="sottotitoloLiscio"></p>
                             </div>
-                        </div> 
+                        </div>  -->
                         
                         
                     

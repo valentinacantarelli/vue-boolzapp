@@ -178,6 +178,14 @@
 .msgSend{
     background-color: #d5f9ba;
     justify-self: flex-end;
+    padding: 10px;
+    position: relative;
+}
+.dataMsg{
+    font-size: 10px;
+    right: 5px;
+    bottom: 2px;
+    position: absolute;
 }
 .sent{
     justify-content: flex-end;
