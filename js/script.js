@@ -105,11 +105,18 @@ const app=new Vue(
                         status: 'sent'
                     });
                     this.scriviMessaggio="";
-                    setTimeout(function(){
-                        alert("Hello"); 
-                       }, 1000);
+                    
                 }
+                setTimeout(()=>{
+                    this.contacts[this.contattoSelezionato].messages.push({
+                        date: '23/09/2021 15:28:00',
+                        message: "ok!",
+                        status: 'received'
+                    });
+                }, 1000);
+                
             },
+            
         }
     }
 );
