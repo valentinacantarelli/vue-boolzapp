@@ -46,7 +46,7 @@
                     </div>
                     <!-- contatti -->
                     <ul class="sezioneContatti">
-                        <li v-for="contact in contacts" class="row contatti"> <img class="avatar" :src="'img/avatar'+ contact.avatar+'.jpg'" alt="">{{contact.name}}</li>
+                        <li v-for="(contact,indice) in contacts" class="row contatti" @click="selezionato(indice)" :class="(indice==contattoSelezionato)?'active':null"> <img class="avatar" :src="'img/avatar'+ contact.avatar+'.jpg'" alt="">{{contact.name}}</li>
                     </ul>
                 </section>
                 <!-- sezione destra chat -->
@@ -74,7 +74,7 @@
                                 <p class="sottotitoloLiscio"></p>
                             </div>
                         </div> 
-                        <div class="rigaMsg ricevuto">
+                        <div  class="rigaMsg ricevuto">
                             <div class="messaggi msgReceived">
                                 <p class="testoMsg "></p>
                                 <p class="sottotitoloLiscio"></p>

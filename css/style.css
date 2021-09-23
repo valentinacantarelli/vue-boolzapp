@@ -172,12 +172,15 @@
 }
 
 /*classi dinamiche*/
-.contattoSelezionato{
+.active{
     background-color:rgb(234, 234, 234);
 }
 .msgSend{
     background-color: #d5f9ba;
     justify-self: flex-end;
+}
+.inviato{
+    justify-content: flex-end;
 }
 
 
