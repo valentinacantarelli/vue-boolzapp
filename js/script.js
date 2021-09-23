@@ -104,8 +104,11 @@ const app=new Vue(
                         message: this.scriviMessaggio,
                         status: 'sent'
                     });
+                    this.scriviMessaggio="";
+                    setTimeout(function(){
+                        alert("Hello"); 
+                       }, 1000);
                 }
-                this.scriviMessaggio="";
             },
         }
     }
