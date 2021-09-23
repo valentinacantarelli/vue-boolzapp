@@ -46,7 +46,9 @@
                     </div>
                     <!-- contatti -->
                     <ul class="sezioneContatti">
-                        <li v-for="(contact,indice) in contacts" class="row contatti" @click="selezionato(indice)" :class="(indice==contattoSelezionato)?'active':null"> <img class="avatar" :src="'img/avatar'+ contact.avatar+'.jpg'" alt="">{{contact.name}}</li>
+                        <li v-for="(contact,indice) in contacts" class="row contatti" @click="selezionato(indice)" :class="(indice==contattoSelezionato)?'active':null">
+                            <img class="avatar" :src="'img/avatar'+ contact.avatar+'.jpg'" alt="">{{contact.name}}
+                        </li>
                     </ul>
                 </section>
                 <!-- sezione destra chat -->
@@ -68,10 +70,10 @@
 
                     </div>
                     <div class="chat">
-                        <div class="rigaMsg inviato">
+                        <div class="rigaMsg inviato" v-for="(message,indice)in contacts[contattoSelezionato].messages":class="message.status" :key="indice">
                             <div class="messaggi msgSend">
-                                <p class="testoMsg "></p>
-                                <p class="sottotitoloLiscio"></p>
+                                <p class="testoMsg ">{{message.message}}</p>
+                                <p class="sottotitoloLiscio">{{message.date}}</p>
                             </div>
                         </div> 
                         <div  class="rigaMsg ricevuto">
