@@ -102,7 +102,7 @@ const app=new Vue(
             addMsg:function(){
                 if(this.scriviMessaggio != ""){
                     this.contacts[this.contattoSelezionato].messages.push({
-                        date: '23/09/2021 15:28:00',
+                        date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
                         message: this.scriviMessaggio,
                         status: 'sent'
                     });
@@ -110,7 +110,7 @@ const app=new Vue(
                 }
                 setTimeout(()=>{
                     this.contacts[this.contattoSelezionato].messages.push({
-                        date: '23/09/2021 15:28:00',
+                        date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
                         message: "ok!",
                         status: 'received'
                     });
