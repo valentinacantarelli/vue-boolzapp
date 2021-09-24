@@ -91,6 +91,8 @@ const app=new Vue(
             ],
             contattoSelezionato:0,
             scriviMessaggio:"",
+            ricercaContatti:"",
+            
 
         },
         methods:{
@@ -105,7 +107,6 @@ const app=new Vue(
                         status: 'sent'
                     });
                     this.scriviMessaggio="";
-                    
                 }
                 setTimeout(()=>{
                     this.contacts[this.contattoSelezionato].messages.push({
@@ -116,6 +117,7 @@ const app=new Vue(
                 }, 1000);
                 
             },
+            
             
         }
     }

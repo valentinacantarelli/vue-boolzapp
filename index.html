@@ -42,14 +42,15 @@
                     <!-- ricerca -->
                     <div class="row search">
                         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-                        <input type="text" class="contactSearch"  placeholder="&#xF002; " style="font-family:Arial, FontAwesome" />
+                        <input type="text" class="contactSearch" v-model="ricercaContatti"  placeholder="&#xF002;" style="font-family:Arial, FontAwesome" />
                     </div>
                     <!-- contatti -->
                     <ul class="sezioneContatti">
-                        <li v-for="(contact,indice) in contacts" class="row contatti" @click="selezionato(indice)" :class="(indice==contattoSelezionato)?'active':null">
+                        <li v-for="(contact,indice) in contacts" class="row contatti" @click="selezionato(indice)" :class="(indice==contattoSelezionato)?'active':null" v-if="contact.name.toLowerCase().includes(ricercaContatti.toLowerCase())">
                             <img class="avatar" :src="'img/avatar'+ contact.avatar+'.jpg'" alt="">{{contact.name}}
                         </li>
                     </ul>
+                    
                 </section>
                 <!-- sezione destra chat -->
                 <section class="chatSection">
